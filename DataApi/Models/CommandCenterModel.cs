@@ -7,47 +7,48 @@ namespace DataApi.Models
 {
     public class CommandCenterModel
     {
+       
 
 
         private String _ProviderName;
         public String ProviderName
         {
-            get { return _ProviderName ?? String.Empty; }
+            get { return _ProviderName ?? "Default Value"; }
             set { _ProviderName = value; }
         }
-
+        public string Value { get; set; }
         private String _ClientMdvcNumber;
         public String ClientMdvcNumber
         {
-            get { return _ClientMdvcNumber ?? String.Empty; }
+            get { return _ClientMdvcNumber ?? "Default _ClientMdvcNumber Value"; }
             set { _ClientMdvcNumber = value; }
         }
 
         private String _ServiceType;
         public String ServiceType
         {
-            get { return _ServiceType ?? String.Empty; }
+            get { return _ServiceType ?? "Default Value"; }
             set { _ServiceType = value; }
         }
 
         private String _MrMDVCNumber;
         public String MrMDVCNumber
         {
-            get { return _MrMDVCNumber ?? String.Empty; }
+            get { return _MrMDVCNumber ?? "Default Value"; }
             set { _MrMDVCNumber = value; }
         }
 
         private String _DeviceType;
         public String DeviceType
         {
-            get { return _DeviceType ?? String.Empty; }
+            get { return _DeviceType ?? "Default Value"; }
             set { _DeviceType = value; }
         }
 
         private String _ClientRate;
         public String ClientRate
         {
-            get { return _ClientRate ?? String.Empty; }
+            get { return _ClientRate ?? "Default Value"; }
             set { _ClientRate = value; }
         }
 
@@ -68,35 +69,35 @@ namespace DataApi.Models
         private String _ProgramId;
         public String ProgramId
         {
-            get { return _ProgramId ?? String.Empty; }
+            get { return _ProgramId ?? "Default Value"; }
             set { _ProgramId = value; }
         }
 
         private String _RegisterCode;
         public String RegisterCode
         {
-            get { return _RegisterCode ?? String.Empty; }
+            get { return _RegisterCode ?? "Default Value"; }
             set { _RegisterCode = value; }
         }
 
         private String _ClientLocationId;
         public String ClientLocationId
         {
-            get { return _ClientLocationId ?? String.Empty; }
+            get { return _ClientLocationId ?? "Default Value"; }
             set { _ClientLocationId = value; }
         }
 
         private String _ClientAccountId;
         public String ClientAccountId
         {
-            get { return ClientAccountId ?? String.Empty; }
-            set { ClientAccountId = value; }
+            get { return _ClientAccountId ?? "Default Value"; }
+            set { _ClientAccountId = value; }
         }
 
         private String _ClientCustomerId;
         public String ClientCustomerId
         {
-            get { return _ClientCustomerId ?? String.Empty; }
+            get { return _ClientCustomerId ?? "Default Value"; }
             set { _ClientCustomerId = value; }
         }
     }
